@@ -1,0 +1,116 @@
+{
+  "version": "0.3.0-alpha.3",
+  "archives": [
+    {
+      "filename": "dsh-mcu51-0.3.0-alpha.3-win32-x64.zip",
+      "sha256": "9540266306afdc00f3e1f6efa243be49b3074f3d37b386fe438aafad626bdd51",
+      "bytes": 14590492,
+      "packageFilesVerified": 342,
+      "runtimeFilesVerified": 255,
+      "nodePassed": 112,
+      "pythonPassed": 98,
+      "smokeCalls": 14
+    },
+    {
+      "filename": "dsh-mcu51-0.3.0-alpha.3-win32-x64.tgz",
+      "sha256": "f38a654ad0da7a17846916752008e9efd48ad81e68f6bfeb42b33ecd54f5374a",
+      "bytes": 14111063,
+      "packageFilesVerified": 342,
+      "runtimeFilesVerified": 255,
+      "nodePassed": 112,
+      "pythonPassed": 98,
+      "smokeCalls": 14
+    }
+  ],
+  "hardwareAccessDuringReleaseChecks": false,
+  "sdk": {
+    "ok": true,
+    "hardwareAccess": false,
+    "realSdk": "0.2.1-rc.2",
+    "registry": "capture fixture; not a booted Desktop profile",
+    "activeDesktopLoaded": false,
+    "packageVersion": "0.3.0-alpha.3",
+    "tools": [
+      "mcu_doctor",
+      "mcu_build",
+      "mcu_flash",
+      "mcu_chipinfo",
+      "mcu_options",
+      "mcu_catalog",
+      "mcu_image",
+      "mcu_serial",
+      "mcu_calc",
+      "mcu_glyph",
+      "mcu_tone",
+      "mcu_project"
+    ],
+    "registered": 12,
+    "disposed": true,
+    "oldPeerRangeExcludedCurrentSdk": true,
+    "currentPeerAndEngineMatched": true,
+    "rejectsUnknownSourceProperty": true,
+    "calls": [
+      {
+        "name": "mcu_doctor",
+        "domainOk": true,
+        "outputSchemaValid": true
+      },
+      {
+        "name": "mcu_build",
+        "domainOk": false,
+        "outputSchemaValid": true
+      },
+      {
+        "name": "mcu_flash",
+        "domainOk": true,
+        "outputSchemaValid": true
+      },
+      {
+        "name": "mcu_chipinfo",
+        "domainOk": true,
+        "outputSchemaValid": true
+      },
+      {
+        "name": "mcu_serial",
+        "domainOk": true,
+        "outputSchemaValid": true
+      },
+      {
+        "name": "mcu_glyph",
+        "domainOk": true,
+        "outputSchemaValid": true
+      },
+      {
+        "name": "mcu_calc",
+        "domainOk": true,
+        "outputSchemaValid": true
+      },
+      {
+        "name": "mcu_tone",
+        "domainOk": true,
+        "outputSchemaValid": true
+      },
+      {
+        "name": "mcu_options",
+        "domainOk": true,
+        "outputSchemaValid": true
+      },
+      {
+        "name": "mcu_catalog",
+        "domainOk": true,
+        "outputSchemaValid": true
+      },
+      {
+        "name": "mcu_image",
+        "domainOk": true,
+        "outputSchemaValid": true
+      },
+      {
+        "name": "mcu_project",
+        "domainOk": true,
+        "outputSchemaValid": true
+      }
+    ],
+    "sdkEntrySha256": "1e53932e7c4213ea24a7d87f06960b7a7702cb21f8a5741c97242b4a470a442a"
+  }
+}

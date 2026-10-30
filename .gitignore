@@ -1,0 +1,7 @@
+runtime/**
+!runtime/win32-x64/
+!runtime/win32-x64/manifest.json
+node_modules/
+**/__pycache__/
+*.pyc
+.tmp/

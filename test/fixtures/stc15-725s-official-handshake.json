@@ -1,0 +1,73 @@
+{
+  "evidence": "Real official STC-ISP 6.75 COM9 API capture, 2026-10-26; replay transport is simulated",
+  "source": "out/mcu51/protocol/2026-10-26T05-24-14-401937Z-official-serial.ndjson",
+  "mcu": "IAP15F2K61S2",
+  "bsl": "7.2.5S",
+  "pulseHex": "92",
+  "programBlockBytes": 128,
+  "frames": [
+    {
+      "direction": "rx",
+      "command": "50",
+      "frameHex": "46 b9 68 00 34 50 8b 8d 79 95 f7 bb 9f 00 b7 16 50 fd 26 dd ff ff 72 53 00 f4 49 05 06 70 95 02 1a 1f 23 25 29 00 f4 f4 04 dc ff a2 bf ff ff 19 05 31 70 16 21 16",
+      "startSeq": 278,
+      "endSeq": 283
+    },
+    {
+      "direction": "tx",
+      "command": "00",
+      "frameHex": "46 b9 6a 00 20 00 0b 00 c0 80 c0 ff c0 00 80 80 80 ff 80 00 40 80 40 ff 40 00 00 80 00 00 00 0a 12 16",
+      "startSeq": 284,
+      "endSeq": 284
+    },
+    {
+      "direction": "rx",
+      "command": "00",
+      "frameHex": "46 b9 68 00 20 00 0b 0c b6 12 29 17 ab 19 63 24 30 2e e4 34 a2 4a 14 5e cd 52 16 72 00 00 00 07 6d 16",
+      "startSeq": 314,
+      "endSeq": 319
+    },
+    {
+      "direction": "tx",
+      "command": "00",
+      "frameHex": "46 b9 6a 00 20 00 0c 9f 80 a0 80 a1 80 a2 80 a3 80 a4 80 70 40 71 40 72 40 73 40 74 40 75 40 0b 8e 16",
+      "startSeq": 320,
+      "endSeq": 320
+    },
+    {
+      "direction": "rx",
+      "command": "00",
+      "frameHex": "46 b9 68 00 20 00 0c 26 ce 26 e7 26 fb 27 0a 27 23 27 41 47 e4 48 16 48 34 48 5c 48 93 48 c0 09 25 16",
+      "startSeq": 352,
+      "endSeq": 357
+    },
+    {
+      "direction": "tx",
+      "command": "01",
+      "frameHex": "46 b9 6a 00 0e 01 71 40 ff d0 80 a1 82 04 9c 16",
+      "startSeq": 358,
+      "endSeq": 358
+    },
+    {
+      "direction": "rx",
+      "command": "01",
+      "frameHex": "46 b9 68 00 07 01 00 70 16",
+      "startSeq": 360,
+      "endSeq": 365
+    },
+    {
+      "direction": "tx",
+      "command": "05",
+      "frameHex": "46 b9 6a 00 0b 05 00 00 5a a5 01 79 16",
+      "startSeq": 372,
+      "endSeq": 372
+    },
+    {
+      "direction": "rx",
+      "command": "05",
+      "frameHex": "46 b9 68 00 07 05 00 74 16",
+      "startSeq": 374,
+      "endSeq": 379
+    }
+  ]
+}

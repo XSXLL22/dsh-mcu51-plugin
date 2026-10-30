@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "action": "chipinfo",
+  "stage": "complete",
+  "programmed": false,
+  "eraseStarted": false,
+  "hardwareOptionsWritten": false,
+  "chip": {
+    "model": "IAP15F2K61S2",
+    "magic": "F449",
+    "bslVersion": "7.2.5S",
+    "freqHz": 11998800,
+    "codeBytes": 62464,
+    "uid": null,
+    "hardwareOptions": {
+      "schemaVersion": 1,
+      "available": true,
+      "support": "supported",
+      "ok": true,
+      "readOnly": true,
+      "source": "initial-bootloader-status",
+      "decoder": "stcgal-1.10/Stc15Option",
+      "rawMsrHex": "f7 bb 9f fd ff",
+      "values": {
+        "reset_pin_enabled": false,
+        "clock_source": "internal",
+        "clock_gain": "high",
+        "watchdog_por_enabled": false,
+        "watchdog_stop_idle": true,
+        "watchdog_prescale": 256,
+        "low_voltage_reset": true,
+        "low_voltage_threshold": 3,
+        "eeprom_lvd_inhibit": true,
+        "eeprom_erase_enabled": false,
+        "bsl_pindetect_enabled": false,
+        "por_reset_delay": "long",
+        "rstout_por_state": "high",
+        "uart2_passthrough": false,
+        "uart2_pin_mode": "normal",
+        "cpu_core_voltage": "unknown"
+      },
+      "unknownFields": [
+        "cpu_core_voltage"
+      ],
+      "fieldMetadata": {
+        "low_voltage_threshold": {
+          "unit": "encoding",
+          "volts": null,
+          "mapping": "unverified-for-model"
+        },
+        "rstout_por_state": {
+          "physicalPin": null,
+          "mapping": "unverified-for-model"
+        }
+      },
+      "errors": []
+    }
+  }
+}

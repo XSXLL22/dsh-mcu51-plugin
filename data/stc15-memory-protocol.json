@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "profileId": "stc675-uart72-memory-preview",
+  "source": {
+    "id": "official-stcisp-6.75-static",
+    "version": "6.75",
+    "exeSha256": "22ada01b21c9f990adbea80938adbb8d1654b4bde03008569d94e3a5a2447257"
+  },
+  "recordIds": [
+    "stc675:0",
+    "stc675:1",
+    "stc675:2",
+    "stc675:3",
+    "stc675:4",
+    "stc675:5",
+    "stc675:6",
+    "stc675:7",
+    "stc675:8",
+    "stc675:10",
+    "stc675:11",
+    "stc675:12",
+    "stc675:13",
+    "stc675:14",
+    "stc675:15",
+    "stc675:16",
+    "stc675:17",
+    "stc675:18"
+  ],
+  "bslFamily": "7.2",
+  "evidence": "official-static",
+  "validation": "offline",
+  "hardwareValidated": false,
+  "planningOnly": true,
+  "erase": {
+    "opcode": 3,
+    "dataSectorBytes": 512,
+    "dataCountBytes": 1,
+    "reservedByte": 0,
+    "magicHex": "5aa5",
+    "codeLengthEncoded": false,
+    "dataCountFormula": "max(0,ceil((combinedEnd-codeBytes)/512))"
+  },
+  "program": {
+    "firstOpcode": 34,
+    "nextOpcode": 2,
+    "addressBytes": 2,
+    "addressEndian": "big",
+    "magicHex": "5aa5"
+  },
+  "mapping": {
+    "kind": "linear-combined-buffer",
+    "fileBaseIsWireBase": false,
+    "targetPlacement": "explicit; datasheet MOVC profile and caller IAP offset",
+    "actualBslEraseExtent": "unknown-without-independent-readback"
+  },
+  "evidenceCanonicalSha256": "ed69a904d55004d6873f12323f08a3bbdac2e46793378f50947d6aba85f4dc4f"
+}

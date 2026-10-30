@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-25",
+  "boards": [
+    {
+      "id": "CT107D",
+      "alias": ["国信长天", "蓝桥杯", "竞赛板", "CT107D"],
+      "name": "国信长天 CT107D（蓝桥杯竞赛板）",
+      "mcu": "IAP15F2K61S2",
+      "mcuFamily": "STC15",
+      "fosc": 12000000,
+      "foscNote": "本档案按12MHz内部IRC配置；IAP15F2K61S2/BSL7.2.5S已有完整烧录和冷启动状态验证，频率随校准略有偏差。",
+      "flashKB": 61,
+      "header": "STC15F2K60S2.H",
+      "projectFlag": "#include \"STC15F2K60S2.H\"",
+      "download": {
+        "flasher": "builtin",
+        "protocol": "stc15",
+        "note": "内置协议开始等待后按板载下载键或冷启动 MCU；从枚举结果指定串口",
+        "baud": 115200,
+        "needsKeyPress": true
+      },
+      "jumpers": ["J5 = KBD（矩阵键盘）", "J13 = IO 模式（不是 MM 模式）"],
+      "bus": {
+        "data": "P0 + 74HC573 锁存",
+        "decode": "P2.5/2.6/2.7 → 74HC138 的 A/B/C",
+        "channels": {
+          "Y4": { "p2": "0x80", "device": "8 只 LED（写 0 点亮）" },
+          "Y5": { "p2": "0xA0", "device": "蜂鸣器 0x40 / 继电器 0x10 / 电机 0x20" },
+          "Y6": { "p2": "0xC0", "device": "数码管位选（one-hot）" },
+          "Y7": { "p2": "0xE0", "device": "数码管段选（共阳，0 = 亮）" }
+        },
+        "writePattern": "P2 = (P2 & 0x1F) | ch; P0 = dat; P2 &= 0x1F;"
+      },
+      "segments": {
+        "type": "commonAnode",
+        "table": [
+          { "index": 0, "char": "0", "code": "0xC0" },
+          { "index": 1, "char": "1", "code": "0xF9" },
+          { "index": 2, "char": "2", "code": "0xA4" },
+          { "index": 3, "char": "3", "code": "0xB0" },
+          { "index": 4, "char": "4", "code": "0x99" },
+          { "index": 5, "char": "5", "code": "0x92" },
+          { "index": 6, "char": "6", "code": "0x82" },
+          { "index": 7, "char": "7", "code": "0xF8" },
+          { "index": 8, "char": "8", "code": "0x80" },
+          { "index": 9, "char": "9", "code": "0x90" },
+          { "index": 10, "char": "灭", "code": "0xFF" },
+          { "index": 11, "char": "C", "code": "0xC6" },
+          { "index": 12, "char": "F", "code": "0x8E" },
+          { "index": 13, "char": "h", "code": "0x8B" },
+          { "index": 14, "char": "E", "code": "0x86" },
+          { "index": 15, "char": "P", "code": "0x8C" },
+          { "index": 16, "char": "A", "code": "0x88" },
+          { "index": 17, "char": "-", "code": "0xBF" },
+          { "index": 18, "char": "L", "code": "0xC7" },
+          { "index": 19, "char": "H", "code": "0x89" },
+          { "index": 20, "char": "只亮a段(最大值)", "code": "0xFE" },
+          { "index": 21, "char": "只亮d段(最小值)", "code": "0xF7" }
+        ],
+        "note": "驱动函数收的是「表索引」不是段码；扩展字符追加在表尾，顺序必须与索引常量一致"
+      },
+      "keys": {
+        "type": "matrix",
+        "rows": "P3.0-P3.3",
+        "cols": ["P4.4", "P4.2", "P3.5", "P3.4"],
+        "codeRange": "4-19",
+        "common": { "S4": 4, "S5": 5, "S8": 8, "S9": 9 },
+        "glitch": "相邻键连按可能出现 Key_Down=1 的抖动组合，不匹配任何分支就是正确行为"
+      },
+      "peripherals": {
+        "ds18b20": "P1.4（1-Wire 期间必须 ET0=0）",
+        "i2c": "SCL=P2.0, SDA=P2.1（PCF8591 / AT24C02）",
+        "ds1302": "SCK=P1.7, IO=P2.3, RST=P1.3（IO 在 P2 上，读写必须 ET0=0）",
+        "ultrasonic": "Tx=P1.0, Rx=P1.1（PCA 计时 CMOD=0x00）",
+        "ne555": "输出 → P3.4（与键盘列复用，测频要错开扫描）",
+        "dac": "PCF8591 AOUT，0-255 → 0-5.0V",
+        "ldr": "PCF8591 AIN1（亮 ≈200+ / 遮光 33~51，阈值取 128）"
+      },
+      "pitfalls": [
+        "PCF8591 换通道后第一次读是上一个通道的残值，必须连读两次取第二次",
+        "DS1302 官方驱动 Read_Rtc 返回顺序是 {时,分,秒}，寄存器 0x80/0x82/0x84 才是秒/分/时",
+        "参数类设置「退出界面才生效」，用生效值/编辑值两组变量"
+      ]
+    },
+    {
+      "id": "PREICHIN",
+      "alias": ["普中", "普中51", "PREICHIN", "STC89"],
+      "name": "普中 51 实验板（PREICHIN）",
+      "mcu": "STC89C52RC",
+      "mcuFamily": "STC89",
+      "fosc": 11059200,
+      "foscNote": "晶振 11.0592MHz（原理图印 12MHz 是错的；12MHz 算波特率会乱码）",
+      "flashKB": 8,
+      "header": "REGX52.H",
+      "projectFlag": "#include <REGX52.H>",
+      "download": {
+        "flasher": "builtin",
+        "protocol": "stc89",
+        "baud": 115200,
+        "note": "stcgal 提示 Waiting for MCU 时必须手动断电 2 秒再上电（DTR 自动复位无效）",
+        "needsPowerCycle": true
+      },
+      "pins": {
+        "P0": "LCD1602 数据 / 数码管段码 / 8×8 点阵列",
+        "P2.0-P2.1": "LED / AT24C02 的 I²C",
+        "P2.2-P2.4": "数码管位选（74HC138）/ LED",
+        "P2.5-P2.7": "LCD 的 RW/RS/EN / LED",
+        "P3.4-P3.6": "74HC595（点阵）/ DS1302",
+        "P3.7": "DS18B20",
+        "P3.2": "红外 HS0038 / 按键 K3 / INT0",
+        "P3.0-P3.1": "串口 RXD/TXD / 按键 K2、K1",
+        "P1": "4×4 矩阵键盘 / 电机 PWM（P1.0）/ 蜂鸣器（P1.5）"
+      },
+      "hardware": [
+        "JOE 短接片必须短接到 GND，否则 74HC595 的 OE 悬空，8×8 点阵全黑（软件无解）",
+        "LCD 写完立刻 P0=0x00; P2|=0x1F; 释放总线，否则数码管会显示字模鬼影",
+        "K1 接 P3.1=TXD：串口发送的起始位会被读成按下，需在发送后 1ms 屏蔽该键"
+      ],
+      "serial": {
+        "baud": 9600,
+        "protocol": [
+          { "cmd": "M1~M5", "desc": "切模式", "echo": "MODE n / OK M" },
+          { "cmd": "S0~S100", "desc": "电机 PWM 占空比", "echo": "OK S=nn" },
+          { "cmd": "T<文本> / A<文本>", "desc": "LCD 第二行 / 第一行写字（≤16 字）", "echo": "OK T / OK A" },
+          { "cmd": "N<8位>", "desc": "数码管固定显示", "echo": "OK N" },
+          { "cmd": "L0~L255", "desc": "8 只 LED 位图", "echo": "OK L" },
+          { "cmd": "V", "desc": "固件版本", "echo": "FW v4.0 STC89C52RC" },
+          { "cmd": "?", "desc": "状态", "echo": "ST mode=n speed=nn" }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,8309 @@
+{
+  "schemaVersion": 1,
+  "storageId": "stcisp-6.75-storage-facts",
+  "source": {
+    "id": "official-stcisp-6.75-static",
+    "version": "6.75",
+    "exeSha256": "22ada01b21c9f990adbea80938adbb8d1654b4bde03008569d94e3a5a2447257",
+    "evidence": "official-static",
+    "hardwareValidated": false,
+    "modelTableVA": "0x454230",
+    "modelRecordBytes": 32,
+    "modelLookupVA": "0x406c32",
+    "voltageSelectorVA": "0x40b64c",
+    "uartPassthroughVA": "0x40ba4d",
+    "txdModeVA": "0x40ba7e",
+    "evidenceCanonicalSha256": "3c86a328b120d953ebac6a73f9971544f14c7e642cad425df1f9bf1d2ae2539d",
+    "evidenceHashFormat": "utf8-json-sorted-keys-compact"
+  },
+  "manualSource": {
+    "id": "stc15-datasheet-2015-10-10-p633",
+    "url": "https://www.stcmicro.com/datasheet/STC15F2K60S2-en.pdf#page=633",
+    "documentDate": "2015-10-10",
+    "pdfPage": 633,
+    "section": "9.2.2 STC15F2K60S2 Series Internal EEPROM Allocation Table",
+    "evidence": "official-datasheet",
+    "validation": "offline"
+  },
+  "evidence": "official-static",
+  "validation": "offline",
+  "hardwareAccess": false,
+  "downloadSupportInferred": false,
+  "fieldOffsets": {
+    "codeBytes": 12,
+    "eepromBytes": 16,
+    "eepromFileBase": 20
+  },
+  "recordsCanonicalSha256": "ebdd1d694d48c5aa90004a686cd7b3bb081bb19767bb290d296e369171ee4015",
+  "records": [
+    {
+      "id": "stc675:0",
+      "name": "STC15F2K08S2",
+      "recordVA": "0x454230",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 54272,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 8192
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 54272
+        },
+        "movcDataRegion": {
+          "start": 8192,
+          "length": 54272
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:1",
+      "name": "STC15F2K16S2",
+      "recordVA": "0x454250",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 46080,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 16384
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 46080
+        },
+        "movcDataRegion": {
+          "start": 16384,
+          "length": 46080
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:2",
+      "name": "STC15F2K24S2",
+      "recordVA": "0x454270",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 37888,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 24576
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 37888
+        },
+        "movcDataRegion": {
+          "start": 24576,
+          "length": 37888
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:3",
+      "name": "STC15F2K32S2",
+      "recordVA": "0x454290",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 29696,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 32768
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 29696
+        },
+        "movcDataRegion": {
+          "start": 32768,
+          "length": 29696
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:4",
+      "name": "STC15F2K40S2",
+      "recordVA": "0x4542b0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 21504,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 40960
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 21504
+        },
+        "movcDataRegion": {
+          "start": 40960,
+          "length": 21504
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:5",
+      "name": "STC15F2K48S2",
+      "recordVA": "0x4542d0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 13312,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 49152
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 13312
+        },
+        "movcDataRegion": {
+          "start": 49152,
+          "length": 13312
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:6",
+      "name": "STC15F2K56S2",
+      "recordVA": "0x4542f0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 57344
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 5120
+        },
+        "movcDataRegion": {
+          "start": 57344,
+          "length": 5120
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:7",
+      "name": "STC15F2K60S2",
+      "recordVA": "0x454310",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 61440
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 1024
+        },
+        "movcDataRegion": {
+          "start": 61440,
+          "length": 1024
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:8",
+      "name": "IAP15F2K61S2",
+      "recordVA": "0x454330",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "shared-code-iap",
+        "codeRegion": {
+          "start": 0,
+          "length": 62464
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 62464
+        },
+        "movcDataRegion": {
+          "start": 0,
+          "length": 62464
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": true,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:9",
+      "name": "IRC15F2K63S2",
+      "recordVA": "0x454350",
+      "tableFacts": {
+        "codeBytes": 65024,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:10",
+      "name": "STC15L2K08S2",
+      "recordVA": "0x454370",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 54272,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 8192
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 54272
+        },
+        "movcDataRegion": {
+          "start": 8192,
+          "length": 54272
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:11",
+      "name": "STC15L2K16S2",
+      "recordVA": "0x454390",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 46080,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 16384
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 46080
+        },
+        "movcDataRegion": {
+          "start": 16384,
+          "length": 46080
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:12",
+      "name": "STC15L2K24S2",
+      "recordVA": "0x4543b0",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 37888,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 24576
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 37888
+        },
+        "movcDataRegion": {
+          "start": 24576,
+          "length": 37888
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:13",
+      "name": "STC15L2K32S2",
+      "recordVA": "0x4543d0",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 29696,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 32768
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 29696
+        },
+        "movcDataRegion": {
+          "start": 32768,
+          "length": 29696
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:14",
+      "name": "STC15L2K40S2",
+      "recordVA": "0x4543f0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 21504,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 40960
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 21504
+        },
+        "movcDataRegion": {
+          "start": 40960,
+          "length": 21504
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:15",
+      "name": "STC15L2K48S2",
+      "recordVA": "0x454410",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 13312,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 49152
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 13312
+        },
+        "movcDataRegion": {
+          "start": 49152,
+          "length": 13312
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:16",
+      "name": "STC15L2K56S2",
+      "recordVA": "0x454430",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 57344
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 5120
+        },
+        "movcDataRegion": {
+          "start": 57344,
+          "length": 5120
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:17",
+      "name": "STC15L2K60S2",
+      "recordVA": "0x454450",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "separate-data-window",
+        "codeRegion": {
+          "start": 0,
+          "length": 61440
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 1024
+        },
+        "movcDataRegion": {
+          "start": 61440,
+          "length": 1024
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": false,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:18",
+      "name": "IAP15L2K61S2",
+      "recordVA": "0x454470",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": {
+        "sourceId": "stc15-datasheet-2015-10-10-p633",
+        "kind": "shared-code-iap",
+        "codeRegion": {
+          "start": 0,
+          "length": 62464
+        },
+        "iapDataRegion": {
+          "start": 0,
+          "length": 62464
+        },
+        "movcDataRegion": {
+          "start": 0,
+          "length": 62464
+        },
+        "iapEraseSectorBytes": 512,
+        "dataOverlapsCode": true,
+        "appliesTo": "datasheet-baseline; connected BSL limits and ISP effects are not inferred",
+        "validation": "offline",
+        "hardwareValidated": false
+      }
+    },
+    {
+      "id": "stc675:19",
+      "name": "IRC15L2K63S2",
+      "recordVA": "0x454490",
+      "tableFacts": {
+        "codeBytes": 65024,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:20",
+      "name": "IAP15F2K61S",
+      "recordVA": "0x4544b0",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:21",
+      "name": "IAP15L2K61S",
+      "recordVA": "0x4544d0",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:22",
+      "name": "STC15F2K08AS",
+      "recordVA": "0x4544f0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 54272,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:23",
+      "name": "STC15F2K16AS",
+      "recordVA": "0x454510",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 46080,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:24",
+      "name": "STC15F2K24AS",
+      "recordVA": "0x454530",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 37888,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:25",
+      "name": "STC15F2K32AS",
+      "recordVA": "0x454550",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 29696,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:26",
+      "name": "STC15F2K40AS",
+      "recordVA": "0x454570",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 21504,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:27",
+      "name": "STC15F2K48AS",
+      "recordVA": "0x454590",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 13312,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:28",
+      "name": "STC15F2K56AS",
+      "recordVA": "0x4545b0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:29",
+      "name": "STC15F2K60AS",
+      "recordVA": "0x4545d0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:30",
+      "name": "IAP15F2K61AS",
+      "recordVA": "0x4545f0",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:31",
+      "name": "IRC15F2K63AS",
+      "recordVA": "0x454610",
+      "tableFacts": {
+        "codeBytes": 65024,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:32",
+      "name": "STC15L2K08AS",
+      "recordVA": "0x454630",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 54272,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:33",
+      "name": "STC15L2K16AS",
+      "recordVA": "0x454650",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 46080,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:34",
+      "name": "STC15L2K24AS",
+      "recordVA": "0x454670",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 37888,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:35",
+      "name": "STC15L2K32AS",
+      "recordVA": "0x454690",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 29696,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:36",
+      "name": "STC15L2K40AS",
+      "recordVA": "0x4546b0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 21504,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:37",
+      "name": "STC15L2K48AS",
+      "recordVA": "0x4546d0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 13312,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:38",
+      "name": "STC15L2K56AS",
+      "recordVA": "0x4546f0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:39",
+      "name": "STC15L2K60AS",
+      "recordVA": "0x454710",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:40",
+      "name": "IAP15L2K61AS",
+      "recordVA": "0x454730",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:41",
+      "name": "IRC15L2K63AS",
+      "recordVA": "0x454750",
+      "tableFacts": {
+        "codeBytes": 65024,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:42",
+      "name": "U7W-5V",
+      "recordVA": "0x454770",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:43",
+      "name": "U7W-3V",
+      "recordVA": "0x454790",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:44",
+      "name": "U8W-5V",
+      "recordVA": "0x4547b0",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:45",
+      "name": "U8W-3V",
+      "recordVA": "0x4547d0",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:46",
+      "name": "STC15F404AD",
+      "recordVA": "0x4547f0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 9216,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:47",
+      "name": "STC15F408AD",
+      "recordVA": "0x454810",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:48",
+      "name": "STC15F412AD",
+      "recordVA": "0x454830",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:49",
+      "name": "IAP15F413AD",
+      "recordVA": "0x454850",
+      "tableFacts": {
+        "codeBytes": 13312,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:50",
+      "name": "STC15L404AD",
+      "recordVA": "0x454870",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 9216,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:51",
+      "name": "STC15L408AD",
+      "recordVA": "0x454890",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:52",
+      "name": "STC15L412AD",
+      "recordVA": "0x4548b0",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:53",
+      "name": "IAP15L413AD",
+      "recordVA": "0x4548d0",
+      "tableFacts": {
+        "codeBytes": 13312,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:54",
+      "name": "STC15W101SW",
+      "recordVA": "0x4548f0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:55",
+      "name": "STC15W102SW",
+      "recordVA": "0x454910",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:56",
+      "name": "STC15W103SW",
+      "recordVA": "0x454930",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:57",
+      "name": "STC15W104SW",
+      "recordVA": "0x454950",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:58",
+      "name": "IAP15W105SW",
+      "recordVA": "0x454970",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:59",
+      "name": "STC15W101S",
+      "recordVA": "0x454990",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:60",
+      "name": "STC15W102S",
+      "recordVA": "0x4549b0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:61",
+      "name": "STC15W103S",
+      "recordVA": "0x4549d0",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:62",
+      "name": "STC15W104S",
+      "recordVA": "0x4549f0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:63",
+      "name": "IAP15W105S",
+      "recordVA": "0x454a10",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:64",
+      "name": "STC15W201S",
+      "recordVA": "0x454a30",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:65",
+      "name": "STC15W202S",
+      "recordVA": "0x454a50",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:66",
+      "name": "STC15W203S",
+      "recordVA": "0x454a70",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:67",
+      "name": "STC15W204S",
+      "recordVA": "0x454a90",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:68",
+      "name": "IAP15W205S",
+      "recordVA": "0x454ab0",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:69",
+      "name": "IRC15W207S",
+      "recordVA": "0x454ad0",
+      "tableFacts": {
+        "codeBytes": 7680,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:70",
+      "name": "STC15W1K16S",
+      "recordVA": "0x454af0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 13312,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:71",
+      "name": "STC15W1K24S",
+      "recordVA": "0x454b10",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:72",
+      "name": "IAP15W1K29S",
+      "recordVA": "0x454b30",
+      "tableFacts": {
+        "codeBytes": 29696,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:73",
+      "name": "IRC15W1K31S",
+      "recordVA": "0x454b50",
+      "tableFacts": {
+        "codeBytes": 32256,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:74",
+      "name": "STC15W404S",
+      "recordVA": "0x454b70",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 9216,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:75",
+      "name": "STC15W408S",
+      "recordVA": "0x454b90",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:76",
+      "name": "STC15W410S",
+      "recordVA": "0x454bb0",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:77",
+      "name": "STC15W412S",
+      "recordVA": "0x454bd0",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:78",
+      "name": "IAP15W413S",
+      "recordVA": "0x454bf0",
+      "tableFacts": {
+        "codeBytes": 13312,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:79",
+      "name": "IRC15W415S",
+      "recordVA": "0x454c10",
+      "tableFacts": {
+        "codeBytes": 15872,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:80",
+      "name": "STC15W404AS",
+      "recordVA": "0x454c30",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 9216,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:81",
+      "name": "STC15W408AS",
+      "recordVA": "0x454c50",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:82",
+      "name": "STC15W410AS",
+      "recordVA": "0x454c70",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:83",
+      "name": "STC15W412AS",
+      "recordVA": "0x454c90",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:84",
+      "name": "IAP15W413AS",
+      "recordVA": "0x454cb0",
+      "tableFacts": {
+        "codeBytes": 13312,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:85",
+      "name": "IRC15W415AS",
+      "recordVA": "0x454cd0",
+      "tableFacts": {
+        "codeBytes": 15872,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:86",
+      "name": "STC15W4K16S4",
+      "recordVA": "0x454cf0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 46080,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:87",
+      "name": "STC15W4K24S4",
+      "recordVA": "0x454d10",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 37888,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:88",
+      "name": "STC15W4K32S4",
+      "recordVA": "0x454d30",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 29696,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:89",
+      "name": "STC15W4K40S4",
+      "recordVA": "0x454d50",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 21504,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:90",
+      "name": "STC15W4K48S4",
+      "recordVA": "0x454d70",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 13312,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:91",
+      "name": "STC15W4K56S4",
+      "recordVA": "0x454d90",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:92",
+      "name": "STC15W4K60S4",
+      "recordVA": "0x454db0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:93",
+      "name": "IAP15W4K61S4",
+      "recordVA": "0x454dd0",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:94",
+      "name": "IRC15W4K63S4",
+      "recordVA": "0x454df0",
+      "tableFacts": {
+        "codeBytes": 65024,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:95",
+      "name": "STC15W100",
+      "recordVA": "0x454e10",
+      "tableFacts": {
+        "codeBytes": 512,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:96",
+      "name": "STC15W101",
+      "recordVA": "0x454e30",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:97",
+      "name": "STC15W102",
+      "recordVA": "0x454e50",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:98",
+      "name": "STC15W103",
+      "recordVA": "0x454e70",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:99",
+      "name": "STC15W104",
+      "recordVA": "0x454e90",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:100",
+      "name": "IAP15W105",
+      "recordVA": "0x454eb0",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:101",
+      "name": "IRC15W107",
+      "recordVA": "0x454ed0",
+      "tableFacts": {
+        "codeBytes": 7168,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:102",
+      "name": "STC15F100W",
+      "recordVA": "0x454ef0",
+      "tableFacts": {
+        "codeBytes": 512,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:103",
+      "name": "STC15F101W",
+      "recordVA": "0x454f10",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:104",
+      "name": "STC15F102W",
+      "recordVA": "0x454f30",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:105",
+      "name": "STC15F103W",
+      "recordVA": "0x454f50",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:106",
+      "name": "STC15F104W",
+      "recordVA": "0x454f70",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:107",
+      "name": "IAP15F105W",
+      "recordVA": "0x454f90",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:108",
+      "name": "IRC15F107W",
+      "recordVA": "0x454fb0",
+      "tableFacts": {
+        "codeBytes": 7168,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:109",
+      "name": "STC15F100",
+      "recordVA": "0x454fd0",
+      "tableFacts": {
+        "codeBytes": 512,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:110",
+      "name": "STC15F101",
+      "recordVA": "0x454ff0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:111",
+      "name": "STC15F102",
+      "recordVA": "0x455010",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:112",
+      "name": "STC15F103",
+      "recordVA": "0x455030",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:113",
+      "name": "STC15F104",
+      "recordVA": "0x455050",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:114",
+      "name": "IAP15F105",
+      "recordVA": "0x455070",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:115",
+      "name": "IRC15F107",
+      "recordVA": "0x455090",
+      "tableFacts": {
+        "codeBytes": 7168,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:116",
+      "name": "STC15L100W",
+      "recordVA": "0x4550b0",
+      "tableFacts": {
+        "codeBytes": 512,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:117",
+      "name": "STC15L101W",
+      "recordVA": "0x4550d0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:118",
+      "name": "STC15L102W",
+      "recordVA": "0x4550f0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:119",
+      "name": "STC15L103W",
+      "recordVA": "0x455110",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:120",
+      "name": "STC15L104W",
+      "recordVA": "0x455130",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:121",
+      "name": "IAP15L105W",
+      "recordVA": "0x455150",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:122",
+      "name": "IRC15L107W",
+      "recordVA": "0x455170",
+      "tableFacts": {
+        "codeBytes": 7168,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:123",
+      "name": "STC15L100",
+      "recordVA": "0x455190",
+      "tableFacts": {
+        "codeBytes": 512,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:124",
+      "name": "STC15L101",
+      "recordVA": "0x4551b0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:125",
+      "name": "STC15L102",
+      "recordVA": "0x4551d0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:126",
+      "name": "STC15L103",
+      "recordVA": "0x4551f0",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:127",
+      "name": "STC15L104",
+      "recordVA": "0x455210",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:128",
+      "name": "IAP15L105",
+      "recordVA": "0x455230",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:129",
+      "name": "IRC15L107",
+      "recordVA": "0x455250",
+      "tableFacts": {
+        "codeBytes": 7168,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:130",
+      "name": "STC15F104E",
+      "recordVA": "0x455270",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:131",
+      "name": "STC15L104E",
+      "recordVA": "0x455290",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:132",
+      "name": "STC15F204EA",
+      "recordVA": "0x4552b0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:133",
+      "name": "IAP15F205EA",
+      "recordVA": "0x4552d0",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:134",
+      "name": "IRC15F207A",
+      "recordVA": "0x4552f0",
+      "tableFacts": {
+        "codeBytes": 7168,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:135",
+      "name": "STC15L204EA",
+      "recordVA": "0x455310",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:136",
+      "name": "IAP15L205EA",
+      "recordVA": "0x455330",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:137",
+      "name": "IRC15L207A",
+      "recordVA": "0x455350",
+      "tableFacts": {
+        "codeBytes": 7168,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:138",
+      "name": "STC12C5A08S2",
+      "recordVA": "0x455370",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 55296,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:139",
+      "name": "STC12C5A16S2",
+      "recordVA": "0x455390",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 47104,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:140",
+      "name": "STC12C5A32S2",
+      "recordVA": "0x4553b0",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 30720,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:141",
+      "name": "STC12C5A40S2",
+      "recordVA": "0x4553d0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:142",
+      "name": "STC12C5A48S2",
+      "recordVA": "0x4553f0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:143",
+      "name": "STC12C5A52S2",
+      "recordVA": "0x455410",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:144",
+      "name": "STC12C5A56S2",
+      "recordVA": "0x455430",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:145",
+      "name": "STC12C5A60S2",
+      "recordVA": "0x455450",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:146",
+      "name": "STC12C5A08AD",
+      "recordVA": "0x455470",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 55296,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:147",
+      "name": "STC12C5A16AD",
+      "recordVA": "0x455490",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 47104,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:148",
+      "name": "STC12C5A32AD",
+      "recordVA": "0x4554b0",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 30720,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:149",
+      "name": "STC12C5A40AD",
+      "recordVA": "0x4554d0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:150",
+      "name": "STC12C5A48AD",
+      "recordVA": "0x4554f0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:151",
+      "name": "STC12C5A52AD",
+      "recordVA": "0x455510",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:152",
+      "name": "STC12C5A56AD",
+      "recordVA": "0x455530",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:153",
+      "name": "STC12C5A60AD",
+      "recordVA": "0x455550",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:154",
+      "name": "STC12C5A08CCP",
+      "recordVA": "0x455570",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 55296,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:155",
+      "name": "STC12C5A16CCP",
+      "recordVA": "0x455590",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 47104,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:156",
+      "name": "STC12C5A32CCP",
+      "recordVA": "0x4555b0",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 30720,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:157",
+      "name": "STC12C5A40CCP",
+      "recordVA": "0x4555d0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:158",
+      "name": "STC12C5A48CCP",
+      "recordVA": "0x4555f0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:159",
+      "name": "STC12C5A52CCP",
+      "recordVA": "0x455610",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:160",
+      "name": "STC12C5A56CCP",
+      "recordVA": "0x455630",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:161",
+      "name": "STC12C5A60CCP",
+      "recordVA": "0x455650",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:162",
+      "name": "STC12C5A08X",
+      "recordVA": "0x455670",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:163",
+      "name": "STC12C5A16X",
+      "recordVA": "0x455690",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:164",
+      "name": "STC12C5A32X",
+      "recordVA": "0x4556b0",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:165",
+      "name": "STC12C5A40X",
+      "recordVA": "0x4556d0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:166",
+      "name": "STC12C5A48X",
+      "recordVA": "0x4556f0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:167",
+      "name": "STC12C5A52X",
+      "recordVA": "0x455710",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:168",
+      "name": "STC12C5A56X",
+      "recordVA": "0x455730",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:169",
+      "name": "STC12C5A60X",
+      "recordVA": "0x455750",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:170",
+      "name": "IAP12C5A08S2",
+      "recordVA": "0x455770",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:171",
+      "name": "IAP12C5A16S2",
+      "recordVA": "0x455790",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:172",
+      "name": "IAP12C5A32S2",
+      "recordVA": "0x4557b0",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:173",
+      "name": "IAP12C5A40S2",
+      "recordVA": "0x4557d0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:174",
+      "name": "IAP12C5A48S2",
+      "recordVA": "0x4557f0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:175",
+      "name": "IAP12C5A52S2",
+      "recordVA": "0x455810",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:176",
+      "name": "IAP12C5A56S2",
+      "recordVA": "0x455830",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:177",
+      "name": "IAP12C5A60S2",
+      "recordVA": "0x455850",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:178",
+      "name": "IAP12C5A62S2",
+      "recordVA": "0x455870",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:179",
+      "name": "IAP12C5A08AD",
+      "recordVA": "0x455890",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:180",
+      "name": "IAP12C5A16AD",
+      "recordVA": "0x4558b0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:181",
+      "name": "IAP12C5A32AD",
+      "recordVA": "0x4558d0",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:182",
+      "name": "IAP12C5A40AD",
+      "recordVA": "0x4558f0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:183",
+      "name": "IAP12C5A48AD",
+      "recordVA": "0x455910",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:184",
+      "name": "IAP12C5A52AD",
+      "recordVA": "0x455930",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:185",
+      "name": "IAP12C5A56AD",
+      "recordVA": "0x455950",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:186",
+      "name": "IAP12C5A60AD",
+      "recordVA": "0x455970",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:187",
+      "name": "IAP12C5A62AD",
+      "recordVA": "0x455990",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:188",
+      "name": "IAP12C5A08CCP",
+      "recordVA": "0x4559b0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:189",
+      "name": "IAP12C5A16CCP",
+      "recordVA": "0x4559d0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:190",
+      "name": "IAP12C5A32CCP",
+      "recordVA": "0x4559f0",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:191",
+      "name": "IAP12C5A40CCP",
+      "recordVA": "0x455a10",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:192",
+      "name": "IAP12C5A48CCP",
+      "recordVA": "0x455a30",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:193",
+      "name": "IAP12C5A52CCP",
+      "recordVA": "0x455a50",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:194",
+      "name": "IAP12C5A56CCP",
+      "recordVA": "0x455a70",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:195",
+      "name": "IAP12C5A60CCP",
+      "recordVA": "0x455a90",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:196",
+      "name": "IAP12C5A62CCP",
+      "recordVA": "0x455ab0",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:197",
+      "name": "IAP12C5A08",
+      "recordVA": "0x455ad0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:198",
+      "name": "IAP12C5A16",
+      "recordVA": "0x455af0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:199",
+      "name": "IAP12C5A32",
+      "recordVA": "0x455b10",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:200",
+      "name": "IAP12C5A40",
+      "recordVA": "0x455b30",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:201",
+      "name": "IAP12C5A48",
+      "recordVA": "0x455b50",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:202",
+      "name": "IAP12C5A52",
+      "recordVA": "0x455b70",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:203",
+      "name": "IAP12C5A56",
+      "recordVA": "0x455b90",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:204",
+      "name": "IAP12C5A60",
+      "recordVA": "0x455bb0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:205",
+      "name": "IAP12C5A62",
+      "recordVA": "0x455bd0",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:206",
+      "name": "STC12LE5A08S2",
+      "recordVA": "0x455bf0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 55296,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:207",
+      "name": "STC12LE5A16S2",
+      "recordVA": "0x455c10",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 47104,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:208",
+      "name": "STC12LE5A32S2",
+      "recordVA": "0x455c30",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 30720,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:209",
+      "name": "STC12LE5A40S2",
+      "recordVA": "0x455c50",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:210",
+      "name": "STC12LE5A48S2",
+      "recordVA": "0x455c70",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:211",
+      "name": "STC12LE5A52S2",
+      "recordVA": "0x455c90",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:212",
+      "name": "STC12LE5A56S2",
+      "recordVA": "0x455cb0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:213",
+      "name": "STC12LE5A60S2",
+      "recordVA": "0x455cd0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:214",
+      "name": "STC12LE5A08AD",
+      "recordVA": "0x455cf0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 55296,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:215",
+      "name": "STC12LE5A16AD",
+      "recordVA": "0x455d10",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 47104,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:216",
+      "name": "STC12LE5A32AD",
+      "recordVA": "0x455d30",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 30720,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:217",
+      "name": "STC12LE5A40AD",
+      "recordVA": "0x455d50",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:218",
+      "name": "STC12LE5A48AD",
+      "recordVA": "0x455d70",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:219",
+      "name": "STC12LE5A52AD",
+      "recordVA": "0x455d90",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:220",
+      "name": "STC12LE5A56AD",
+      "recordVA": "0x455db0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:221",
+      "name": "STC12LE5A60AD",
+      "recordVA": "0x455dd0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:222",
+      "name": "STC12LE5A08CCP",
+      "recordVA": "0x455df0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 55296,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:223",
+      "name": "STC12LE5A16CCP",
+      "recordVA": "0x455e10",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 47104,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:224",
+      "name": "STC12LE5A32CCP",
+      "recordVA": "0x455e30",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 30720,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:225",
+      "name": "STC12LE5A40CCP",
+      "recordVA": "0x455e50",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:226",
+      "name": "STC12LE5A48CCP",
+      "recordVA": "0x455e70",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:227",
+      "name": "STC12LE5A52CCP",
+      "recordVA": "0x455e90",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:228",
+      "name": "STC12LE5A56CCP",
+      "recordVA": "0x455eb0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:229",
+      "name": "STC12LE5A60CCP",
+      "recordVA": "0x455ed0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:230",
+      "name": "STC12LE5A08X",
+      "recordVA": "0x455ef0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:231",
+      "name": "STC12LE5A16X",
+      "recordVA": "0x455f10",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:232",
+      "name": "STC12LE5A32X",
+      "recordVA": "0x455f30",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:233",
+      "name": "STC12LE5A40X",
+      "recordVA": "0x455f50",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:234",
+      "name": "STC12LE5A48X",
+      "recordVA": "0x455f70",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:235",
+      "name": "STC12LE5A52X",
+      "recordVA": "0x455f90",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:236",
+      "name": "STC12LE5A56X",
+      "recordVA": "0x455fb0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:237",
+      "name": "STC12LE5A60X",
+      "recordVA": "0x455fd0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:238",
+      "name": "IAP12LE5A08S2",
+      "recordVA": "0x455ff0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:239",
+      "name": "IAP12LE5A16S2",
+      "recordVA": "0x456010",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:240",
+      "name": "IAP12LE5A32S2",
+      "recordVA": "0x456030",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:241",
+      "name": "IAP12LE5A40S2",
+      "recordVA": "0x456050",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:242",
+      "name": "IAP12LE5A48S2",
+      "recordVA": "0x456070",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:243",
+      "name": "IAP12LE5A52S2",
+      "recordVA": "0x456090",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:244",
+      "name": "IAP12LE5A56S2",
+      "recordVA": "0x4560b0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:245",
+      "name": "IAP12LE5A60S2",
+      "recordVA": "0x4560d0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:246",
+      "name": "IAP12LE5A62S2",
+      "recordVA": "0x4560f0",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:247",
+      "name": "IAP12LE5A08AD",
+      "recordVA": "0x456110",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:248",
+      "name": "IAP12LE5A16AD",
+      "recordVA": "0x456130",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:249",
+      "name": "IAP12LE5A32AD",
+      "recordVA": "0x456150",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:250",
+      "name": "IAP12LE5A40AD",
+      "recordVA": "0x456170",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:251",
+      "name": "IAP12LE5A48AD",
+      "recordVA": "0x456190",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:252",
+      "name": "IAP12LE5A52AD",
+      "recordVA": "0x4561b0",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:253",
+      "name": "IAP12LE5A56AD",
+      "recordVA": "0x4561d0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:254",
+      "name": "IAP12LE5A60AD",
+      "recordVA": "0x4561f0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:255",
+      "name": "IAP12LE5A62AD",
+      "recordVA": "0x456210",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:256",
+      "name": "IAP12LE5A08CCP",
+      "recordVA": "0x456230",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:257",
+      "name": "IAP12LE5A16CCP",
+      "recordVA": "0x456250",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:258",
+      "name": "IAP12LE5A32CCP",
+      "recordVA": "0x456270",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:259",
+      "name": "IAP12LE5A40CCP",
+      "recordVA": "0x456290",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:260",
+      "name": "IAP12LE5A48CCP",
+      "recordVA": "0x4562b0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:261",
+      "name": "IAP12LE5A52CCP",
+      "recordVA": "0x4562d0",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:262",
+      "name": "IAP12LE5A56CCP",
+      "recordVA": "0x4562f0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:263",
+      "name": "IAP12LE5A60CCP",
+      "recordVA": "0x456310",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:264",
+      "name": "IAP12LE5A62CCP",
+      "recordVA": "0x456330",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:265",
+      "name": "IAP12LE5A08",
+      "recordVA": "0x456350",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:266",
+      "name": "IAP12LE5A16",
+      "recordVA": "0x456370",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:267",
+      "name": "IAP12LE5A32",
+      "recordVA": "0x456390",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:268",
+      "name": "IAP12LE5A40",
+      "recordVA": "0x4563b0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:269",
+      "name": "IAP12LE5A48",
+      "recordVA": "0x4563d0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:270",
+      "name": "IAP12LE5A52",
+      "recordVA": "0x4563f0",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:271",
+      "name": "IAP12LE5A56",
+      "recordVA": "0x456410",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:272",
+      "name": "IAP12LE5A60",
+      "recordVA": "0x456430",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:273",
+      "name": "IAP12LE5A62",
+      "recordVA": "0x456450",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:274",
+      "name": "STC10F02XE",
+      "recordVA": "0x456470",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 12288,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:275",
+      "name": "STC10F04XE",
+      "recordVA": "0x456490",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:276",
+      "name": "STC10F06XE",
+      "recordVA": "0x4564b0",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 8192,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:277",
+      "name": "STC10F08XE",
+      "recordVA": "0x4564d0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:278",
+      "name": "STC10F10XE",
+      "recordVA": "0x4564f0",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:279",
+      "name": "STC10F12XE",
+      "recordVA": "0x456510",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:280",
+      "name": "STC10F02X",
+      "recordVA": "0x456530",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:281",
+      "name": "STC10F04X",
+      "recordVA": "0x456550",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:282",
+      "name": "STC10F06X",
+      "recordVA": "0x456570",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:283",
+      "name": "STC10F08X",
+      "recordVA": "0x456590",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:284",
+      "name": "STC10F10X",
+      "recordVA": "0x4565b0",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:285",
+      "name": "STC10F12X",
+      "recordVA": "0x4565d0",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:286",
+      "name": "STC10F02",
+      "recordVA": "0x4565f0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:287",
+      "name": "STC10F04",
+      "recordVA": "0x456610",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:288",
+      "name": "STC10F06",
+      "recordVA": "0x456630",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:289",
+      "name": "STC10F08",
+      "recordVA": "0x456650",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:290",
+      "name": "STC10F10",
+      "recordVA": "0x456670",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:291",
+      "name": "STC10F12",
+      "recordVA": "0x456690",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:292",
+      "name": "IAP10F02XE",
+      "recordVA": "0x4566b0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:293",
+      "name": "IAP10F04XE",
+      "recordVA": "0x4566d0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:294",
+      "name": "IAP10F06XE",
+      "recordVA": "0x4566f0",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:295",
+      "name": "IAP10F08XE",
+      "recordVA": "0x456710",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:296",
+      "name": "IAP10F10XE",
+      "recordVA": "0x456730",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:297",
+      "name": "IAP10F12XE",
+      "recordVA": "0x456750",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:298",
+      "name": "IAP10F14X",
+      "recordVA": "0x456770",
+      "tableFacts": {
+        "codeBytes": 14336,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:299",
+      "name": "IAP10F02",
+      "recordVA": "0x456790",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:300",
+      "name": "IAP10F04",
+      "recordVA": "0x4567b0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:301",
+      "name": "IAP10F06",
+      "recordVA": "0x4567d0",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:302",
+      "name": "IAP10F08",
+      "recordVA": "0x4567f0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:303",
+      "name": "IAP10F10",
+      "recordVA": "0x456810",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:304",
+      "name": "IAP10F12",
+      "recordVA": "0x456830",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:305",
+      "name": "IAP10F14",
+      "recordVA": "0x456850",
+      "tableFacts": {
+        "codeBytes": 14336,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:306",
+      "name": "STC10L02XE",
+      "recordVA": "0x456870",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 12288,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:307",
+      "name": "STC10L04XE",
+      "recordVA": "0x456890",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:308",
+      "name": "STC10L06XE",
+      "recordVA": "0x4568b0",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 8192,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:309",
+      "name": "STC10L08XE",
+      "recordVA": "0x4568d0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:310",
+      "name": "STC10L10XE",
+      "recordVA": "0x4568f0",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:311",
+      "name": "STC10L12XE",
+      "recordVA": "0x456910",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:312",
+      "name": "STC10L02X",
+      "recordVA": "0x456930",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:313",
+      "name": "STC10L04X",
+      "recordVA": "0x456950",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:314",
+      "name": "STC10L06X",
+      "recordVA": "0x456970",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:315",
+      "name": "STC10L08X",
+      "recordVA": "0x456990",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:316",
+      "name": "STC10L10X",
+      "recordVA": "0x4569b0",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:317",
+      "name": "STC10L12X",
+      "recordVA": "0x4569d0",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:318",
+      "name": "STC10L02",
+      "recordVA": "0x4569f0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:319",
+      "name": "STC10L04",
+      "recordVA": "0x456a10",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:320",
+      "name": "STC10L06",
+      "recordVA": "0x456a30",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:321",
+      "name": "STC10L08",
+      "recordVA": "0x456a50",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:322",
+      "name": "STC10L10",
+      "recordVA": "0x456a70",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:323",
+      "name": "STC10L12",
+      "recordVA": "0x456a90",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:324",
+      "name": "IAP10L02XE",
+      "recordVA": "0x456ab0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:325",
+      "name": "IAP10L04XE",
+      "recordVA": "0x456ad0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:326",
+      "name": "IAP10L06XE",
+      "recordVA": "0x456af0",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:327",
+      "name": "IAP10L08XE",
+      "recordVA": "0x456b10",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:328",
+      "name": "IAP10L10XE",
+      "recordVA": "0x456b30",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:329",
+      "name": "IAP10L12XE",
+      "recordVA": "0x456b50",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:330",
+      "name": "IAP10L14X",
+      "recordVA": "0x456b70",
+      "tableFacts": {
+        "codeBytes": 14336,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:331",
+      "name": "IAP10L02",
+      "recordVA": "0x456b90",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:332",
+      "name": "IAP10L04",
+      "recordVA": "0x456bb0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:333",
+      "name": "IAP10L06",
+      "recordVA": "0x456bd0",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:334",
+      "name": "IAP10L08",
+      "recordVA": "0x456bf0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:335",
+      "name": "IAP10L10",
+      "recordVA": "0x456c10",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:336",
+      "name": "IAP10L12",
+      "recordVA": "0x456c30",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:337",
+      "name": "IAP10L14",
+      "recordVA": "0x456c50",
+      "tableFacts": {
+        "codeBytes": 14336,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:338",
+      "name": "STC11F01E",
+      "recordVA": "0x456c70",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:339",
+      "name": "STC11F02E",
+      "recordVA": "0x456c90",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:340",
+      "name": "STC11F03E",
+      "recordVA": "0x456cb0",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:341",
+      "name": "STC11F04E",
+      "recordVA": "0x456cd0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:342",
+      "name": "STC11F05E",
+      "recordVA": "0x456cf0",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:343",
+      "name": "STC11F01",
+      "recordVA": "0x456d10",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:344",
+      "name": "STC11F02",
+      "recordVA": "0x456d30",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:345",
+      "name": "STC11F03",
+      "recordVA": "0x456d50",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:346",
+      "name": "STC11F04",
+      "recordVA": "0x456d70",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:347",
+      "name": "STC11F05",
+      "recordVA": "0x456d90",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:348",
+      "name": "IAP11F01E",
+      "recordVA": "0x456db0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:349",
+      "name": "IAP11F02E",
+      "recordVA": "0x456dd0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:350",
+      "name": "IAP11F03E",
+      "recordVA": "0x456df0",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:351",
+      "name": "IAP11F04E",
+      "recordVA": "0x456e10",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:352",
+      "name": "IAP11F05E",
+      "recordVA": "0x456e30",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:353",
+      "name": "IAP11F01",
+      "recordVA": "0x456e50",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:354",
+      "name": "IAP11F02",
+      "recordVA": "0x456e70",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:355",
+      "name": "IAP11F03",
+      "recordVA": "0x456e90",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:356",
+      "name": "IAP11F04",
+      "recordVA": "0x456eb0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:357",
+      "name": "IAP11F05",
+      "recordVA": "0x456ed0",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:358",
+      "name": "IAP11F06",
+      "recordVA": "0x456ef0",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:359",
+      "name": "STC11L01E",
+      "recordVA": "0x456f10",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:360",
+      "name": "STC11L02E",
+      "recordVA": "0x456f30",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:361",
+      "name": "STC11L03E",
+      "recordVA": "0x456f50",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:362",
+      "name": "STC11L04E",
+      "recordVA": "0x456f70",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:363",
+      "name": "STC11L05E",
+      "recordVA": "0x456f90",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:364",
+      "name": "STC11L01",
+      "recordVA": "0x456fb0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:365",
+      "name": "STC11L02",
+      "recordVA": "0x456fd0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:366",
+      "name": "STC11L03",
+      "recordVA": "0x456ff0",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:367",
+      "name": "STC11L04",
+      "recordVA": "0x457010",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:368",
+      "name": "STC11L05",
+      "recordVA": "0x457030",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:369",
+      "name": "IAP11L01E",
+      "recordVA": "0x457050",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:370",
+      "name": "IAP11L02E",
+      "recordVA": "0x457070",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:371",
+      "name": "IAP11L03E",
+      "recordVA": "0x457090",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:372",
+      "name": "IAP11L04E",
+      "recordVA": "0x4570b0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:373",
+      "name": "IAP11L05E",
+      "recordVA": "0x4570d0",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:374",
+      "name": "IAP11L01",
+      "recordVA": "0x4570f0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:375",
+      "name": "IAP11L02",
+      "recordVA": "0x457110",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:376",
+      "name": "IAP11L03",
+      "recordVA": "0x457130",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:377",
+      "name": "IAP11L04",
+      "recordVA": "0x457150",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:378",
+      "name": "IAP11L05",
+      "recordVA": "0x457170",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:379",
+      "name": "IAP11L06",
+      "recordVA": "0x457190",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:380",
+      "name": "STC11F08XE",
+      "recordVA": "0x4571b0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 55296,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:381",
+      "name": "STC11F16XE",
+      "recordVA": "0x4571d0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 47104,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:382",
+      "name": "STC11F20XE",
+      "recordVA": "0x4571f0",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 30720,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:383",
+      "name": "STC11F32XE",
+      "recordVA": "0x457210",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 30720,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:384",
+      "name": "STC11F40XE",
+      "recordVA": "0x457230",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:385",
+      "name": "STC11F48XE",
+      "recordVA": "0x457250",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:386",
+      "name": "STC11F52XE",
+      "recordVA": "0x457270",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:387",
+      "name": "STC11F56XE",
+      "recordVA": "0x457290",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:388",
+      "name": "STC11F60XE",
+      "recordVA": "0x4572b0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:389",
+      "name": "STC11F08X",
+      "recordVA": "0x4572d0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:390",
+      "name": "STC11F16X",
+      "recordVA": "0x4572f0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:391",
+      "name": "STC11F20X",
+      "recordVA": "0x457310",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:392",
+      "name": "STC11F32X",
+      "recordVA": "0x457330",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:393",
+      "name": "STC11F40X",
+      "recordVA": "0x457350",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:394",
+      "name": "STC11F48X",
+      "recordVA": "0x457370",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:395",
+      "name": "STC11F52X",
+      "recordVA": "0x457390",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:396",
+      "name": "STC11F56X",
+      "recordVA": "0x4573b0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:397",
+      "name": "STC11F60X",
+      "recordVA": "0x4573d0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:398",
+      "name": "STC11F08",
+      "recordVA": "0x4573f0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:399",
+      "name": "STC11F16",
+      "recordVA": "0x457410",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:400",
+      "name": "STC11F20",
+      "recordVA": "0x457430",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:401",
+      "name": "STC11F32",
+      "recordVA": "0x457450",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:402",
+      "name": "STC11F40",
+      "recordVA": "0x457470",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:403",
+      "name": "STC11F48",
+      "recordVA": "0x457490",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:404",
+      "name": "STC11F52",
+      "recordVA": "0x4574b0",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:405",
+      "name": "STC11F56",
+      "recordVA": "0x4574d0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:406",
+      "name": "STC11F60",
+      "recordVA": "0x4574f0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:407",
+      "name": "IAP11F08XE",
+      "recordVA": "0x457510",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:408",
+      "name": "IAP11F16XE",
+      "recordVA": "0x457530",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:409",
+      "name": "IAP11F20XE",
+      "recordVA": "0x457550",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:410",
+      "name": "IAP11F32XE",
+      "recordVA": "0x457570",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:411",
+      "name": "IAP11F40XE",
+      "recordVA": "0x457590",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:412",
+      "name": "IAP11F48XE",
+      "recordVA": "0x4575b0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:413",
+      "name": "IAP11F52XE",
+      "recordVA": "0x4575d0",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:414",
+      "name": "IAP11F56XE",
+      "recordVA": "0x4575f0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:415",
+      "name": "IAP11F60XE",
+      "recordVA": "0x457610",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:416",
+      "name": "IAP11F08X",
+      "recordVA": "0x457630",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:417",
+      "name": "IAP11F16X",
+      "recordVA": "0x457650",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:418",
+      "name": "IAP11F20X",
+      "recordVA": "0x457670",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:419",
+      "name": "IAP11F32X",
+      "recordVA": "0x457690",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:420",
+      "name": "IAP11F40X",
+      "recordVA": "0x4576b0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:421",
+      "name": "IAP11F48X",
+      "recordVA": "0x4576d0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:422",
+      "name": "IAP11F52X",
+      "recordVA": "0x4576f0",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:423",
+      "name": "IAP11F56X",
+      "recordVA": "0x457710",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:424",
+      "name": "IAP11F60X",
+      "recordVA": "0x457730",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:425",
+      "name": "IAP11F62X",
+      "recordVA": "0x457750",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:426",
+      "name": "IAP11F08",
+      "recordVA": "0x457770",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:427",
+      "name": "IAP11F16",
+      "recordVA": "0x457790",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:428",
+      "name": "IAP11F20",
+      "recordVA": "0x4577b0",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:429",
+      "name": "IAP11F32",
+      "recordVA": "0x4577d0",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:430",
+      "name": "IAP11F40",
+      "recordVA": "0x4577f0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:431",
+      "name": "IAP11F48",
+      "recordVA": "0x457810",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:432",
+      "name": "IAP11F52",
+      "recordVA": "0x457830",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:433",
+      "name": "IAP11F56",
+      "recordVA": "0x457850",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:434",
+      "name": "IAP11F60",
+      "recordVA": "0x457870",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:435",
+      "name": "IAP11F62",
+      "recordVA": "0x457890",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:436",
+      "name": "STC11L08XE",
+      "recordVA": "0x4578b0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 55296,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:437",
+      "name": "STC11L16XE",
+      "recordVA": "0x4578d0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 47104,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:438",
+      "name": "STC11L20XE",
+      "recordVA": "0x4578f0",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 30720,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:439",
+      "name": "STC11L32XE",
+      "recordVA": "0x457910",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 30720,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:440",
+      "name": "STC11L40XE",
+      "recordVA": "0x457930",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:441",
+      "name": "STC11L48XE",
+      "recordVA": "0x457950",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:442",
+      "name": "STC11L52XE",
+      "recordVA": "0x457970",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:443",
+      "name": "STC11L56XE",
+      "recordVA": "0x457990",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:444",
+      "name": "STC11L60XE",
+      "recordVA": "0x4579b0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:445",
+      "name": "STC11L08X",
+      "recordVA": "0x4579d0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:446",
+      "name": "STC11L16X",
+      "recordVA": "0x4579f0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:447",
+      "name": "STC11L20X",
+      "recordVA": "0x457a10",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:448",
+      "name": "STC11L32X",
+      "recordVA": "0x457a30",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:449",
+      "name": "STC11L40X",
+      "recordVA": "0x457a50",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:450",
+      "name": "STC11L48X",
+      "recordVA": "0x457a70",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:451",
+      "name": "STC11L52X",
+      "recordVA": "0x457a90",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:452",
+      "name": "STC11L56X",
+      "recordVA": "0x457ab0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:453",
+      "name": "STC11L60X",
+      "recordVA": "0x457ad0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:454",
+      "name": "STC11L08",
+      "recordVA": "0x457af0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:455",
+      "name": "STC11L16",
+      "recordVA": "0x457b10",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:456",
+      "name": "STC11L20",
+      "recordVA": "0x457b30",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:457",
+      "name": "STC11L32",
+      "recordVA": "0x457b50",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:458",
+      "name": "STC11L40",
+      "recordVA": "0x457b70",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:459",
+      "name": "STC11L48",
+      "recordVA": "0x457b90",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:460",
+      "name": "STC11L52",
+      "recordVA": "0x457bb0",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:461",
+      "name": "STC11L56",
+      "recordVA": "0x457bd0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:462",
+      "name": "STC11L60",
+      "recordVA": "0x457bf0",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:463",
+      "name": "IAP11L08XE",
+      "recordVA": "0x457c10",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:464",
+      "name": "IAP11L16XE",
+      "recordVA": "0x457c30",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:465",
+      "name": "IAP11L20XE",
+      "recordVA": "0x457c50",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:466",
+      "name": "IAP11L32XE",
+      "recordVA": "0x457c70",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:467",
+      "name": "IAP11L40XE",
+      "recordVA": "0x457c90",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:468",
+      "name": "IAP11L48XE",
+      "recordVA": "0x457cb0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:469",
+      "name": "IAP11L52XE",
+      "recordVA": "0x457cd0",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:470",
+      "name": "IAP11L56XE",
+      "recordVA": "0x457cf0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:471",
+      "name": "IAP11L60XE",
+      "recordVA": "0x457d10",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:472",
+      "name": "IAP11L08X",
+      "recordVA": "0x457d30",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:473",
+      "name": "IAP11L16X",
+      "recordVA": "0x457d50",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:474",
+      "name": "IAP11L20X",
+      "recordVA": "0x457d70",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:475",
+      "name": "IAP11L32X",
+      "recordVA": "0x457d90",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:476",
+      "name": "IAP11L40X",
+      "recordVA": "0x457db0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:477",
+      "name": "IAP11L48X",
+      "recordVA": "0x457dd0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:478",
+      "name": "IAP11L52X",
+      "recordVA": "0x457df0",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:479",
+      "name": "IAP11L56X",
+      "recordVA": "0x457e10",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:480",
+      "name": "IAP11L60X",
+      "recordVA": "0x457e30",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:481",
+      "name": "IAP11L62X",
+      "recordVA": "0x457e50",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:482",
+      "name": "IAP11L08",
+      "recordVA": "0x457e70",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:483",
+      "name": "IAP11L16",
+      "recordVA": "0x457e90",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:484",
+      "name": "IAP11L20",
+      "recordVA": "0x457eb0",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:485",
+      "name": "IAP11L32",
+      "recordVA": "0x457ed0",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:486",
+      "name": "IAP11L40",
+      "recordVA": "0x457ef0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:487",
+      "name": "IAP11L48",
+      "recordVA": "0x457f10",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:488",
+      "name": "IAP11L52",
+      "recordVA": "0x457f30",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:489",
+      "name": "IAP11L56",
+      "recordVA": "0x457f50",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:490",
+      "name": "IAP11L60",
+      "recordVA": "0x457f70",
+      "tableFacts": {
+        "codeBytes": 61440,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:491",
+      "name": "IAP11L62",
+      "recordVA": "0x457f90",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:492",
+      "name": "STC12C5201AD",
+      "recordVA": "0x457fb0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:493",
+      "name": "STC12C5202AD",
+      "recordVA": "0x457fd0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:494",
+      "name": "STC12C5203AD",
+      "recordVA": "0x457ff0",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:495",
+      "name": "STC12C5204AD",
+      "recordVA": "0x458010",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:496",
+      "name": "STC12C5205AD",
+      "recordVA": "0x458030",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:497",
+      "name": "STC12C5206AD",
+      "recordVA": "0x458050",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:498",
+      "name": "STC12C5201PWM",
+      "recordVA": "0x458070",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:499",
+      "name": "STC12C5202PWM",
+      "recordVA": "0x458090",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:500",
+      "name": "STC12C5203PWM",
+      "recordVA": "0x4580b0",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:501",
+      "name": "STC12C5204PWM",
+      "recordVA": "0x4580d0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:502",
+      "name": "STC12C5205PWM",
+      "recordVA": "0x4580f0",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:503",
+      "name": "STC12C5206PWM",
+      "recordVA": "0x458110",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:504",
+      "name": "STC12C5201",
+      "recordVA": "0x458130",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:505",
+      "name": "STC12C5202",
+      "recordVA": "0x458150",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:506",
+      "name": "STC12C5203",
+      "recordVA": "0x458170",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:507",
+      "name": "STC12C5204",
+      "recordVA": "0x458190",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:508",
+      "name": "STC12C5205",
+      "recordVA": "0x4581b0",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:509",
+      "name": "STC12C5206",
+      "recordVA": "0x4581d0",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:510",
+      "name": "STC12LE5201AD",
+      "recordVA": "0x4581f0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:511",
+      "name": "STC12LE5202AD",
+      "recordVA": "0x458210",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:512",
+      "name": "STC12LE5203AD",
+      "recordVA": "0x458230",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:513",
+      "name": "STC12LE5204AD",
+      "recordVA": "0x458250",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:514",
+      "name": "STC12LE5205AD",
+      "recordVA": "0x458270",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:515",
+      "name": "STC12LE5206AD",
+      "recordVA": "0x458290",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:516",
+      "name": "STC12LE5201PWM",
+      "recordVA": "0x4582b0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:517",
+      "name": "STC12LE5202PWM",
+      "recordVA": "0x4582d0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:518",
+      "name": "STC12LE5203PWM",
+      "recordVA": "0x4582f0",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:519",
+      "name": "STC12LE5204PWM",
+      "recordVA": "0x458310",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:520",
+      "name": "STC12LE5205PWM",
+      "recordVA": "0x458330",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:521",
+      "name": "STC12LE5206PWM",
+      "recordVA": "0x458350",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:522",
+      "name": "STC12LE5201",
+      "recordVA": "0x458370",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 5120,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:523",
+      "name": "STC12LE5202",
+      "recordVA": "0x458390",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:524",
+      "name": "STC12LE5203",
+      "recordVA": "0x4583b0",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:525",
+      "name": "STC12LE5204",
+      "recordVA": "0x4583d0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:526",
+      "name": "STC12LE5205",
+      "recordVA": "0x4583f0",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:527",
+      "name": "STC12LE5206",
+      "recordVA": "0x458410",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:528",
+      "name": "STC12C5601AD",
+      "recordVA": "0x458430",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 29696,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:529",
+      "name": "STC12C5602AD",
+      "recordVA": "0x458450",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 28672,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:530",
+      "name": "STC12C5603AD",
+      "recordVA": "0x458470",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 27648,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:531",
+      "name": "STC12C5604AD",
+      "recordVA": "0x458490",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 26624,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:532",
+      "name": "STC12C5605AD",
+      "recordVA": "0x4584b0",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 25600,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:533",
+      "name": "STC12C5606AD",
+      "recordVA": "0x4584d0",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 24576,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:534",
+      "name": "STC12C5608AD",
+      "recordVA": "0x4584f0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:535",
+      "name": "STC12C5612AD",
+      "recordVA": "0x458510",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 18432,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:536",
+      "name": "STC12C5616AD",
+      "recordVA": "0x458530",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:537",
+      "name": "STC12C5620AD",
+      "recordVA": "0x458550",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:538",
+      "name": "STC12C5624AD",
+      "recordVA": "0x458570",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:539",
+      "name": "STC12C5628AD",
+      "recordVA": "0x458590",
+      "tableFacts": {
+        "codeBytes": 28672,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:540",
+      "name": "STC12C5630AD",
+      "recordVA": "0x4585b0",
+      "tableFacts": {
+        "codeBytes": 30720,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:541",
+      "name": "STC12C5601",
+      "recordVA": "0x4585d0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 29696,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:542",
+      "name": "STC12C5602",
+      "recordVA": "0x4585f0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 28672,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:543",
+      "name": "STC12C5603",
+      "recordVA": "0x458610",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 27648,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:544",
+      "name": "STC12C5604",
+      "recordVA": "0x458630",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 26624,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:545",
+      "name": "STC12C5605",
+      "recordVA": "0x458650",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 25600,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:546",
+      "name": "STC12C5606",
+      "recordVA": "0x458670",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 24576,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:547",
+      "name": "STC12C5608",
+      "recordVA": "0x458690",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:548",
+      "name": "STC12C5612",
+      "recordVA": "0x4586b0",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 18432,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:549",
+      "name": "STC12C5616",
+      "recordVA": "0x4586d0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:550",
+      "name": "STC12C5620",
+      "recordVA": "0x4586f0",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:551",
+      "name": "STC12C5624",
+      "recordVA": "0x458710",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:552",
+      "name": "STC12C5628",
+      "recordVA": "0x458730",
+      "tableFacts": {
+        "codeBytes": 28672,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:553",
+      "name": "STC12C5630",
+      "recordVA": "0x458750",
+      "tableFacts": {
+        "codeBytes": 30720,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:554",
+      "name": "STC12LE5601AD",
+      "recordVA": "0x458770",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 29696,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:555",
+      "name": "STC12LE5602AD",
+      "recordVA": "0x458790",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 28672,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:556",
+      "name": "STC12LE5603AD",
+      "recordVA": "0x4587b0",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 27648,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:557",
+      "name": "STC12LE5604AD",
+      "recordVA": "0x4587d0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 26624,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:558",
+      "name": "STC12LE5605AD",
+      "recordVA": "0x4587f0",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 25600,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:559",
+      "name": "STC12LE5606AD",
+      "recordVA": "0x458810",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 24576,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:560",
+      "name": "STC12LE5608AD",
+      "recordVA": "0x458830",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:561",
+      "name": "STC12LE5612AD",
+      "recordVA": "0x458850",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 18432,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:562",
+      "name": "STC12LE5616AD",
+      "recordVA": "0x458870",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:563",
+      "name": "STC12LE5620AD",
+      "recordVA": "0x458890",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:564",
+      "name": "STC12LE5624AD",
+      "recordVA": "0x4588b0",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:565",
+      "name": "STC12LE5628AD",
+      "recordVA": "0x4588d0",
+      "tableFacts": {
+        "codeBytes": 28672,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:566",
+      "name": "STC12LE5630AD",
+      "recordVA": "0x4588f0",
+      "tableFacts": {
+        "codeBytes": 30720,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:567",
+      "name": "STC12LE5601",
+      "recordVA": "0x458910",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 29696,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:568",
+      "name": "STC12LE5602",
+      "recordVA": "0x458930",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 28672,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:569",
+      "name": "STC12LE5603",
+      "recordVA": "0x458950",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 27648,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:570",
+      "name": "STC12LE5604",
+      "recordVA": "0x458970",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 26624,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:571",
+      "name": "STC12LE5605",
+      "recordVA": "0x458990",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 25600,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:572",
+      "name": "STC12LE5606",
+      "recordVA": "0x4589b0",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 24576,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:573",
+      "name": "STC12LE5608",
+      "recordVA": "0x4589d0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:574",
+      "name": "STC12LE5612",
+      "recordVA": "0x4589f0",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 18432,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:575",
+      "name": "STC12LE5616",
+      "recordVA": "0x458a10",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:576",
+      "name": "STC12LE5620",
+      "recordVA": "0x458a30",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 10240,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:577",
+      "name": "STC12LE5624",
+      "recordVA": "0x458a50",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 6144,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:578",
+      "name": "STC12LE5628",
+      "recordVA": "0x458a70",
+      "tableFacts": {
+        "codeBytes": 28672,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:579",
+      "name": "STC12LE5630",
+      "recordVA": "0x458a90",
+      "tableFacts": {
+        "codeBytes": 30720,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:580",
+      "name": "STC608AD-5",
+      "recordVA": "0x458ab0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:581",
+      "name": "IAP616AD-5",
+      "recordVA": "0x458ad0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:582",
+      "name": "STC608AD-3",
+      "recordVA": "0x458af0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 22528,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:583",
+      "name": "IAP616AD-3",
+      "recordVA": "0x458b10",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 14336,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:584",
+      "name": "STC12C5401AD",
+      "recordVA": "0x458b30",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 22016,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:585",
+      "name": "STC12C5402AD",
+      "recordVA": "0x458b50",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 20992,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:586",
+      "name": "STC12C5404AD",
+      "recordVA": "0x458b70",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 18944,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:587",
+      "name": "STC12C5406AD",
+      "recordVA": "0x458b90",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 16896,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:588",
+      "name": "STC12C5408AD",
+      "recordVA": "0x458bb0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 10752,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:589",
+      "name": "STC12C5410AD",
+      "recordVA": "0x458bd0",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 4608,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:590",
+      "name": "STC12C5412AD",
+      "recordVA": "0x458bf0",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 11776,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:591",
+      "name": "STC12C5416AD",
+      "recordVA": "0x458c10",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 12288,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:592",
+      "name": "STC12C5420AD",
+      "recordVA": "0x458c30",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 8192,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:593",
+      "name": "STC12C5424AD",
+      "recordVA": "0x458c50",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:594",
+      "name": "STC12C5428AD",
+      "recordVA": "0x458c70",
+      "tableFacts": {
+        "codeBytes": 28672,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:595",
+      "name": "STC12C5401",
+      "recordVA": "0x458c90",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 22016,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:596",
+      "name": "STC12C5402",
+      "recordVA": "0x458cb0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 20992,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:597",
+      "name": "STC12C5404",
+      "recordVA": "0x458cd0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 18944,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:598",
+      "name": "STC12C5406",
+      "recordVA": "0x458cf0",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 16896,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:599",
+      "name": "STC12C5408",
+      "recordVA": "0x458d10",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 10752,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:600",
+      "name": "STC12C5410",
+      "recordVA": "0x458d30",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 4608,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:601",
+      "name": "STC12C5412",
+      "recordVA": "0x458d50",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 11776,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:602",
+      "name": "STC12C5416",
+      "recordVA": "0x458d70",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 12288,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:603",
+      "name": "STC12C5420",
+      "recordVA": "0x458d90",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 8192,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:604",
+      "name": "STC12C5424",
+      "recordVA": "0x458db0",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:605",
+      "name": "STC12C5428",
+      "recordVA": "0x458dd0",
+      "tableFacts": {
+        "codeBytes": 28672,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:606",
+      "name": "STC12LE5401AD",
+      "recordVA": "0x458df0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 22016,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:607",
+      "name": "STC12LE5402AD",
+      "recordVA": "0x458e10",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 20992,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:608",
+      "name": "STC12LE5404AD",
+      "recordVA": "0x458e30",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 18944,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:609",
+      "name": "STC12LE5406AD",
+      "recordVA": "0x458e50",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 16896,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:610",
+      "name": "STC12LE5408AD",
+      "recordVA": "0x458e70",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 10752,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:611",
+      "name": "STC12LE5410AD",
+      "recordVA": "0x458e90",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 4608,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:612",
+      "name": "STC12LE5412AD",
+      "recordVA": "0x458eb0",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 11776,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:613",
+      "name": "STC12LE5416AD",
+      "recordVA": "0x458ed0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 12288,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:614",
+      "name": "STC12LE5420AD",
+      "recordVA": "0x458ef0",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 8192,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:615",
+      "name": "STC12LE5424AD",
+      "recordVA": "0x458f10",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:616",
+      "name": "STC12LE5428AD",
+      "recordVA": "0x458f30",
+      "tableFacts": {
+        "codeBytes": 28672,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:617",
+      "name": "STC12LE5401",
+      "recordVA": "0x458f50",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 22016,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:618",
+      "name": "STC12LE5402",
+      "recordVA": "0x458f70",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 20992,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:619",
+      "name": "STC12LE5404",
+      "recordVA": "0x458f90",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 18944,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:620",
+      "name": "STC12LE5406",
+      "recordVA": "0x458fb0",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 16896,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:621",
+      "name": "STC12LE5408",
+      "recordVA": "0x458fd0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 10752,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:622",
+      "name": "STC12LE5410",
+      "recordVA": "0x458ff0",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 4608,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:623",
+      "name": "STC12LE5412",
+      "recordVA": "0x459010",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 11776,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:624",
+      "name": "STC12LE5416",
+      "recordVA": "0x459030",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 12288,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:625",
+      "name": "STC12LE5420",
+      "recordVA": "0x459050",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 8192,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:626",
+      "name": "STC12LE5424",
+      "recordVA": "0x459070",
+      "tableFacts": {
+        "codeBytes": 24576,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:627",
+      "name": "STC12LE5428",
+      "recordVA": "0x459090",
+      "tableFacts": {
+        "codeBytes": 28672,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:628",
+      "name": "STC12C1052AD",
+      "recordVA": "0x4590b0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:629",
+      "name": "STC12C2052AD",
+      "recordVA": "0x4590d0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:630",
+      "name": "STC12C3052AD",
+      "recordVA": "0x4590f0",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:631",
+      "name": "STC12C4052AD",
+      "recordVA": "0x459110",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:632",
+      "name": "STC12C5052AD",
+      "recordVA": "0x459130",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:633",
+      "name": "STC12C1052",
+      "recordVA": "0x459150",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:634",
+      "name": "STC12C2052",
+      "recordVA": "0x459170",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:635",
+      "name": "STC12C3052",
+      "recordVA": "0x459190",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:636",
+      "name": "STC12C4052",
+      "recordVA": "0x4591b0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:637",
+      "name": "STC12C5052",
+      "recordVA": "0x4591d0",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:638",
+      "name": "STC12LE1052AD",
+      "recordVA": "0x4591f0",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:639",
+      "name": "STC12LE2052AD",
+      "recordVA": "0x459210",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:640",
+      "name": "STC12LE3052AD",
+      "recordVA": "0x459230",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:641",
+      "name": "STC12LE4052AD",
+      "recordVA": "0x459250",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:642",
+      "name": "STC12LE5052AD",
+      "recordVA": "0x459270",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:643",
+      "name": "STC12LE1052",
+      "recordVA": "0x459290",
+      "tableFacts": {
+        "codeBytes": 1024,
+        "eepromBytes": 4096,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:644",
+      "name": "STC12LE2052",
+      "recordVA": "0x4592b0",
+      "tableFacts": {
+        "codeBytes": 2048,
+        "eepromBytes": 3072,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:645",
+      "name": "STC12LE3052",
+      "recordVA": "0x4592d0",
+      "tableFacts": {
+        "codeBytes": 3072,
+        "eepromBytes": 2048,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:646",
+      "name": "STC12LE4052",
+      "recordVA": "0x4592f0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 1024,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:647",
+      "name": "STC12LE5052",
+      "recordVA": "0x459310",
+      "tableFacts": {
+        "codeBytes": 5120,
+        "eepromBytes": 0,
+        "eepromFileBase": 0
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:648",
+      "name": "STC90C51RC",
+      "recordVA": "0x459330",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 9216,
+        "eepromFileBase": 4096
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:649",
+      "name": "STC90C52RC",
+      "recordVA": "0x459350",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 5120,
+        "eepromFileBase": 8192
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:650",
+      "name": "STC90C53RC",
+      "recordVA": "0x459370",
+      "tableFacts": {
+        "codeBytes": 14336,
+        "eepromBytes": 0,
+        "eepromFileBase": 14336
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:651",
+      "name": "STC90C06RC",
+      "recordVA": "0x459390",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 7168,
+        "eepromFileBase": 6144
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:652",
+      "name": "STC90C07RC",
+      "recordVA": "0x4593b0",
+      "tableFacts": {
+        "codeBytes": 7168,
+        "eepromBytes": 6144,
+        "eepromFileBase": 7168
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:653",
+      "name": "STC90C10RC",
+      "recordVA": "0x4593d0",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 3072,
+        "eepromFileBase": 10240
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:654",
+      "name": "STC90C12RC",
+      "recordVA": "0x4593f0",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 1024,
+        "eepromFileBase": 12288
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:655",
+      "name": "STC90LE51RC",
+      "recordVA": "0x459410",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 9216,
+        "eepromFileBase": 4096
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:656",
+      "name": "STC90LE52RC",
+      "recordVA": "0x459430",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 5120,
+        "eepromFileBase": 8192
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:657",
+      "name": "STC90LE53RC",
+      "recordVA": "0x459450",
+      "tableFacts": {
+        "codeBytes": 14336,
+        "eepromBytes": 0,
+        "eepromFileBase": 14336
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:658",
+      "name": "STC90LE06RC",
+      "recordVA": "0x459470",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 7168,
+        "eepromFileBase": 6144
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:659",
+      "name": "STC90LE07RC",
+      "recordVA": "0x459490",
+      "tableFacts": {
+        "codeBytes": 7168,
+        "eepromBytes": 6144,
+        "eepromFileBase": 7168
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:660",
+      "name": "STC90LE10RC",
+      "recordVA": "0x4594b0",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 3072,
+        "eepromFileBase": 10240
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:661",
+      "name": "STC90LE12RC",
+      "recordVA": "0x4594d0",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 1024,
+        "eepromFileBase": 12288
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:662",
+      "name": "STC90C51RD+",
+      "recordVA": "0x4594f0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 58368,
+        "eepromFileBase": 4096
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:663",
+      "name": "STC90C52RD+",
+      "recordVA": "0x459510",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 54272,
+        "eepromFileBase": 8192
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:664",
+      "name": "STC90C54RD+",
+      "recordVA": "0x459530",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 46080,
+        "eepromFileBase": 16384
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:665",
+      "name": "STC90C55RD+",
+      "recordVA": "0x459550",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 41984,
+        "eepromFileBase": 20480
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:666",
+      "name": "STC90C58RD+",
+      "recordVA": "0x459570",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 29696,
+        "eepromFileBase": 32768
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:667",
+      "name": "STC90C510RD+",
+      "recordVA": "0x459590",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 21504,
+        "eepromFileBase": 40960
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:668",
+      "name": "STC90C512RD+",
+      "recordVA": "0x4595b0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 13312,
+        "eepromFileBase": 49152
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:669",
+      "name": "STC90C513RD+",
+      "recordVA": "0x4595d0",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 9216,
+        "eepromFileBase": 53248
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:670",
+      "name": "STC90C514RD+",
+      "recordVA": "0x4595f0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 5120,
+        "eepromFileBase": 57344
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:671",
+      "name": "STC90C516RD+",
+      "recordVA": "0x459610",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 62464
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:672",
+      "name": "STC90LE51RD+",
+      "recordVA": "0x459630",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 58368,
+        "eepromFileBase": 4096
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:673",
+      "name": "STC90LE52RD+",
+      "recordVA": "0x459650",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 54272,
+        "eepromFileBase": 8192
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:674",
+      "name": "STC90LE54RD+",
+      "recordVA": "0x459670",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 46080,
+        "eepromFileBase": 16384
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:675",
+      "name": "STC90LE55RD+",
+      "recordVA": "0x459690",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 41984,
+        "eepromFileBase": 20480
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:676",
+      "name": "STC90LE58RD+",
+      "recordVA": "0x4596b0",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 29696,
+        "eepromFileBase": 32768
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:677",
+      "name": "STC90LE510RD+",
+      "recordVA": "0x4596d0",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 21504,
+        "eepromFileBase": 40960
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:678",
+      "name": "STC90LE512RD+",
+      "recordVA": "0x4596f0",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 13312,
+        "eepromFileBase": 49152
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:679",
+      "name": "STC90LE513RD+",
+      "recordVA": "0x459710",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 9216,
+        "eepromFileBase": 53248
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:680",
+      "name": "STC90LE514RD+",
+      "recordVA": "0x459730",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 5120,
+        "eepromFileBase": 57344
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:681",
+      "name": "STC90LE516RD+",
+      "recordVA": "0x459750",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 62464
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:682",
+      "name": "STC90C51AD",
+      "recordVA": "0x459770",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 58368,
+        "eepromFileBase": 4096
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:683",
+      "name": "STC90C52AD",
+      "recordVA": "0x459790",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 54272,
+        "eepromFileBase": 8192
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:684",
+      "name": "STC90C54AD",
+      "recordVA": "0x4597b0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 46080,
+        "eepromFileBase": 16384
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:685",
+      "name": "STC90C55AD",
+      "recordVA": "0x4597d0",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 41984,
+        "eepromFileBase": 20480
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:686",
+      "name": "STC90C58AD",
+      "recordVA": "0x4597f0",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 29696,
+        "eepromFileBase": 32768
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:687",
+      "name": "STC90C510AD",
+      "recordVA": "0x459810",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 21504,
+        "eepromFileBase": 40960
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:688",
+      "name": "STC90C512AD",
+      "recordVA": "0x459830",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 13312,
+        "eepromFileBase": 49152
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:689",
+      "name": "STC90C513AD",
+      "recordVA": "0x459850",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 9216,
+        "eepromFileBase": 53248
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:690",
+      "name": "STC90C514AD",
+      "recordVA": "0x459870",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 5120,
+        "eepromFileBase": 57344
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:691",
+      "name": "STC90C516AD",
+      "recordVA": "0x459890",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 62464
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:692",
+      "name": "STC90LE51AD",
+      "recordVA": "0x4598b0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 58368,
+        "eepromFileBase": 4096
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:693",
+      "name": "STC90LE52AD",
+      "recordVA": "0x4598d0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 54272,
+        "eepromFileBase": 8192
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:694",
+      "name": "STC90LE54AD",
+      "recordVA": "0x4598f0",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 46080,
+        "eepromFileBase": 16384
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:695",
+      "name": "STC90LE55AD",
+      "recordVA": "0x459910",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 41984,
+        "eepromFileBase": 20480
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:696",
+      "name": "STC90LE58AD",
+      "recordVA": "0x459930",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 29696,
+        "eepromFileBase": 32768
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:697",
+      "name": "STC90LE510AD",
+      "recordVA": "0x459950",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 21504,
+        "eepromFileBase": 40960
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:698",
+      "name": "STC90LE512AD",
+      "recordVA": "0x459970",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 13312,
+        "eepromFileBase": 49152
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:699",
+      "name": "STC90LE513AD",
+      "recordVA": "0x459990",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 9216,
+        "eepromFileBase": 53248
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:700",
+      "name": "STC90LE514AD",
+      "recordVA": "0x4599b0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 5120,
+        "eepromFileBase": 57344
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:701",
+      "name": "STC90LE516AD",
+      "recordVA": "0x4599d0",
+      "tableFacts": {
+        "codeBytes": 62464,
+        "eepromBytes": 0,
+        "eepromFileBase": 62464
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:702",
+      "name": "STC89C51RC/LE51RC",
+      "recordVA": "0x4599f0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 10240,
+        "eepromFileBase": 4096
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:703",
+      "name": "STC89C52RC/LE52RC",
+      "recordVA": "0x459a10",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 6144,
+        "eepromFileBase": 8192
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:704",
+      "name": "STC89C53RC/LE53RC",
+      "recordVA": "0x459a30",
+      "tableFacts": {
+        "codeBytes": 14336,
+        "eepromBytes": 0,
+        "eepromFileBase": 14336
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:705",
+      "name": "STC89C06RC/LE06RC",
+      "recordVA": "0x459a50",
+      "tableFacts": {
+        "codeBytes": 6144,
+        "eepromBytes": 8192,
+        "eepromFileBase": 6144
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:706",
+      "name": "STC89C07RC/LE07RC",
+      "recordVA": "0x459a70",
+      "tableFacts": {
+        "codeBytes": 7168,
+        "eepromBytes": 7168,
+        "eepromFileBase": 7168
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:707",
+      "name": "STC89C10RC/LE10RC",
+      "recordVA": "0x459a90",
+      "tableFacts": {
+        "codeBytes": 10240,
+        "eepromBytes": 4096,
+        "eepromFileBase": 10240
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:708",
+      "name": "STC89C12RC/LE12RC",
+      "recordVA": "0x459ab0",
+      "tableFacts": {
+        "codeBytes": 12288,
+        "eepromBytes": 2048,
+        "eepromFileBase": 12288
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:709",
+      "name": "STC89C51RD+/LE51RD+",
+      "recordVA": "0x459ad0",
+      "tableFacts": {
+        "codeBytes": 4096,
+        "eepromBytes": 59392,
+        "eepromFileBase": 4096
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:710",
+      "name": "STC89C52RD+/LE52RD+",
+      "recordVA": "0x459af0",
+      "tableFacts": {
+        "codeBytes": 8192,
+        "eepromBytes": 55296,
+        "eepromFileBase": 8192
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:711",
+      "name": "STC89C54RD+/LE54RD+",
+      "recordVA": "0x459b10",
+      "tableFacts": {
+        "codeBytes": 16384,
+        "eepromBytes": 47104,
+        "eepromFileBase": 16384
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:712",
+      "name": "STC89C55RD+/LE55RD+",
+      "recordVA": "0x459b30",
+      "tableFacts": {
+        "codeBytes": 20480,
+        "eepromBytes": 43008,
+        "eepromFileBase": 20480
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:713",
+      "name": "STC89C58RD+/LE58RD+",
+      "recordVA": "0x459b50",
+      "tableFacts": {
+        "codeBytes": 32768,
+        "eepromBytes": 30720,
+        "eepromFileBase": 32768
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:714",
+      "name": "STC89C510RD+/LE510RD+",
+      "recordVA": "0x459b70",
+      "tableFacts": {
+        "codeBytes": 40960,
+        "eepromBytes": 22528,
+        "eepromFileBase": 40960
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:715",
+      "name": "STC89C512RD+/LE512RD+",
+      "recordVA": "0x459b90",
+      "tableFacts": {
+        "codeBytes": 49152,
+        "eepromBytes": 14336,
+        "eepromFileBase": 49152
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:716",
+      "name": "STC89C513RD+/LE513RD+",
+      "recordVA": "0x459bb0",
+      "tableFacts": {
+        "codeBytes": 53248,
+        "eepromBytes": 10240,
+        "eepromFileBase": 53248
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:717",
+      "name": "STC89C514RD+/LE514RD+",
+      "recordVA": "0x459bd0",
+      "tableFacts": {
+        "codeBytes": 57344,
+        "eepromBytes": 6144,
+        "eepromFileBase": 57344
+      },
+      "layout": null
+    },
+    {
+      "id": "stc675:718",
+      "name": "STC89C516RD+/LE516RD+",
+      "recordVA": "0x459bf0",
+      "tableFacts": {
+        "codeBytes": 63488,
+        "eepromBytes": 0,
+        "eepromFileBase": 63488
+      },
+      "layout": null
+    }
+  ]
+}

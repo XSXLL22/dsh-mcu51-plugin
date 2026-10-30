@@ -1,0 +1,36 @@
+{
+  "name": "dsh-mcu51",
+  "version": "0.3.0-alpha.3",
+  "description": "51 单片机开发工具箱（DSH 插件）：Keil 编译 / STC 烧录 / 串口遥测 / 波特率与定时器计算 / 取字模 / 简谱转频率表。",
+  "private": false,
+  "license": "MIT",
+  "author": "XSXLL22",
+  "repository": { "type": "git", "url": "git+https://github.com/XSXLL22/dsh-mcu51-plugin.git" },
+  "homepage": "https://github.com/XSXLL22/dsh-mcu51-plugin#readme",
+  "bugs": { "url": "https://github.com/XSXLL22/dsh-mcu51-plugin/issues" },
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "8051", "stc", "serial", "embedded", "ct107d"],
+  "os": ["win32"],
+  "cpu": ["x64"],
+  "files": ["dist", "lib", "data", "sidecar", "runtime", "licenses", "test", "scripts/bundle_runtime.py", "scripts/package_release.py", "scripts/verify_release.py", "cordis.patch.yml", "README.md", "VALIDATION.md", "LICENSE", "THIRD_PARTY_NOTICES.md"],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:isp": "runtime/win32-x64/python.exe -I -B test/test_isp.py",
+    "test:isp-capture": "runtime/win32-x64/python.exe -I -B test/test_stc15_capture.py",
+    "smoke": "node test/smoke.mjs"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": "^22.19.0 || >=24",
+    "dsh": ">=0.2.1-rc.2 <0.2.2-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5",
+    "@deepseek-ai/dsh-tools": ">=0.2.1-rc.2 <0.2.2-0"
+  }
+}

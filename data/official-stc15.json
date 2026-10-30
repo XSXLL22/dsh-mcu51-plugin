@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "id": "official-stcisp-6.75-static",
+    "version": "6.75",
+    "exeSha256": "22ada01b21c9f990adbea80938adbb8d1654b4bde03008569d94e3a5a2447257",
+    "evidence": "official-static",
+    "hardwareValidated": false,
+    "modelTableVA": "0x454230",
+    "modelRecordBytes": 32,
+    "modelLookupVA": "0x406c32",
+    "voltageSelectorVA": "0x40b64c",
+    "uartPassthroughVA": "0x40ba4d",
+    "txdModeVA": "0x40ba7e"
+  },
+  "models": [
+    {
+      "model": "IAP15F2K61S2",
+      "magic": "F449",
+      "recordIndex": 8,
+      "recordVA": "0x454330",
+      "flags": "0x60baf",
+      "lowVoltage": {
+        "mask": "07",
+        "msrByteIndex": 1,
+        "tableEndVA": "0x46cd60",
+        "nominalVoltsByEncoding": [
+          4.64,
+          4.32,
+          4.05,
+          3.82,
+          3.61,
+          3.43,
+          3.28,
+          3.14
+        ]
+      }
+    },
+    {
+      "model": "IAP15L2K61S2",
+      "magic": "F4C9",
+      "recordIndex": 18,
+      "recordVA": "0x454470",
+      "flags": "0x60bad",
+      "lowVoltage": {
+        "mask": "07",
+        "msrByteIndex": 1,
+        "tableEndVA": "0x46cc5c",
+        "nominalVoltsByEncoding": [
+          3.08,
+          2.82,
+          2.61,
+          2.42,
+          2.26,
+          2.12,
+          2.0,
+          1.89
+        ]
+      }
+    }
+  ],
+  "uartFields": {
+    "uart2_passthrough": {
+      "msrByteIndex": 2,
+      "mask": "40",
+      "physicalSignal": "TXD",
+      "legacyName": true,
+      "states": [
+        {
+          "value": false,
+          "textVA": "0x46f0b0",
+          "text": ". TXD与RXD为相互独立的IO"
+        },
+        {
+          "value": true,
+          "textVA": "0x46f0fc",
+          "text": ". TXD脚直通输出RXD脚的电平"
+        }
+      ]
+    },
+    "uart2_pin_mode": {
+      "msrByteIndex": 2,
+      "mask": "20",
+      "physicalSignal": "TXD",
+      "legacyName": true,
+      "states": [
+        {
+          "value": "normal",
+          "textVA": "0x46f01c",
+          "text": ". 芯片复位后,TXD脚为弱上拉双向口"
+        },
+        {
+          "value": "push-pull",
+          "textVA": "0x46f070",
+          "text": ". 芯片复位后,TXD脚为强推挽输出"
+        }
+      ]
+    }
+  }
+}
